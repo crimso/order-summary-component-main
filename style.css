@@ -1,0 +1,178 @@
+:root {
+    --primary-color-pale-blue: hsl(225, 100%, 94%);
+    --primary-color-bright-blue: hsl(245, 75%, 52%);
+
+    --neutral-color-very-pale-blue: hsl(225, 100%, 98%);
+    --neutral-color-desaturated-blue: hsl(224, 23%, 55%);
+    --neutral-color-dark-blue: hsl(223, 47%, 23%);
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Red Hat Display", sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: contain;
+    background-color: var(--primary-color-pale-blue);
+
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px 15px 0 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 400px;
+    max-width: 90%;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0 20px 15px 0px rgba(141, 139, 139, 0.459);
+}
+
+.title-container {
+    padding: 0 15px;
+    margin-inline: auto;
+}
+
+h1 {
+    margin-top: 40px;
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 1rem;
+    margin: 20px 20px;
+    color: var(--neutral-color-desaturated-blue);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.plan {
+    width: 100%;
+    max-width: 360px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    margin-inline: auto;
+}
+
+.plan-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 320px;
+    padding: 20px;
+    background-color: var(--neutral-color-very-pale-blue);
+    border-radius: 8px;
+}
+
+.annual-plan {
+    margin-right: 30px;
+}
+
+.annual-plan-info {
+    font-weight: 900;
+}
+
+.annual-plan-price {
+    color: var(--neutral-color-desaturated-blue);
+    font-weight: 600;
+}
+
+.change-btn {
+    color: var(--primary-color-bright-blue);
+    font-weight: 900;
+    font-size: 0.9rem;
+}
+
+.change-btn:hover {
+    color: hsl(245, 52%, 65%);
+}
+
+.payment-info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 360px;
+    padding: 20px 20px 0;
+    margin-inline: auto;
+}
+
+.payment-info a {
+    text-decoration: none;
+}
+
+.btn-proceed-payment {
+    background-color: var(--primary-color-bright-blue);
+    color: white;
+    font-weight: 800;
+    font-size: 0.9rem;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 360px;
+    padding: 10px 20px;
+    margin: 10px 0;
+    box-shadow: 0px 15px 10px 5px rgba(185, 184, 184, 0.425);
+}
+
+.btn-proceed-payment:hover {
+    background-color: hsl(245, 52%, 65%);
+}
+
+.btn-cancel {
+    color: var(--neutral-color-desaturated-blue);
+    padding: 10px;
+    font-size: 0.9rem;
+    margin: 10px auto 30px auto;
+    font-weight: 800;
+}
+
+.btn-cancel:hover {
+    color: black;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 619px) {
+    body {
+        background-image: url(./images/pattern-background-mobile.svg);
+    }
+
+}
